@@ -1,0 +1,7 @@
+{
+    "/wp": {
+      "target": "http://buyithacarealestate.com",
+      "secure": false
+    },
+    "changeOrigin": true
+  }

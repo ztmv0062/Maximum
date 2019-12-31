@@ -1,0 +1,71 @@
+<div class="auth-wrapper align-items-stretch">
+    <div class="header1">
+        <img src="assets/images/GSDLogoFullTransp.png" alt="Snov.io" width="125" class="brand-img">
+        <div class="signup">
+            <span>Don't have an account?</span>
+             <a [routerLink]="['/register']" class="btn">Sign Up</a>
+        </div>
+    </div>
+  <div class="flex-grow-1">
+    <div class="h-100 d-md-flex align-items-center auth-side-img">
+      <div class="col-sm-10 auth-content w-auto">
+          <img src="assets/images/GSDLogoFullTransp.png" alt="" class="img-fluid"><br/><br/>
+        <!-- <img src="assets/images/auth/auth-logo.png" alt="" class="img-fluid">
+        <h1 class="text-white my-4">Welcome Back!</h1>
+        <h4 class="text-white font-weight-normal">Signin to your account and get explore the Able Pro Dashboard Template.<br/>Do not forget to play with live customizer</h4> -->
+        <!-- <h1 style="color: #444;">Welcome you!</h1> -->
+        <!-- <h4 class="font-weight-normal" style="color: #444;">Signup to your account and made member of the Able Pro Dashboard Template.<br/>Do not forget to play with live customizer</h4> -->
+        <ul>
+            <li>Get business prospects and email addresses</li>
+            <li>Verify emails individually and in bulk</li>
+            <li>Send emails for free</li>
+            <li>Design drip campaigns visually</li>
+            <li>Identify technologies on websites</li>
+        </ul>
+      </div>
+    </div>
+    <div class="auth-side-form">
+      <div class=" auth-content">
+          <form [formGroup]="loginForm"  (ngSubmit)="login()">
+             
+        <!-- <img src="assets/images/auth/auth-logo-dark.png" alt="" class="img-fluid mb-4 d-block d-xl-none d-lg-none"> -->
+        <h3 class="mb-4 f-w-400">Log In to your account</h3>
+        <app-alert *ngIf="toggle" type="danger" dismiss="true">Invalid Username or Password.</app-alert>
+        <!-- <div *ngIf="toggle">
+            <p>
+              Invalid Username or Password
+           </p>
+        </div> -->
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email address" formControlName="email" [(ngModel)]="email" name="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+          </div> 
+        </div>
+        <div class="input-group mb-4">
+          <input type="password" class="form-control" placeholder="Password" formControlName="password" [(ngModel)]="password" name="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Password is required</div>
+              <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+          </div>
+        </div>
+        <div class="custom-control custom-checkbox text-left mb-4 mt-2">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Remember me</label>
+        </div>
+        <button class="btn btn-block btn-primary mb-0">Signin</button>
+        <div class="text-center">
+          <div class="saprator my-4"><span>OR</span></div>
+          <!-- <button class="btn text-white bg-facebook mb-2 mr-2  wid-40 px-0 hei-40 rounded-circle"><i class="fab fa-facebook-f"></i></button>
+          <button class="btn text-white bg-googleplus mb-2 mr-2 wid-40 px-0 hei-40 rounded-circle"><i class="fab fa-google-plus-g"></i></button>
+          <button class="btn text-white bg-twitter mb-2  wid-40 px-0 hei-40 rounded-circle"><i class="fab fa-twitter"></i></button> -->
+          <p class="mb-2 text-muted">Forgot Your Password? <a [routerLink]="['/auth/reset-password-v2']" class="f-w-400">Reset</a></p>
+          <p class="mb-0 text-muted">Don’t have an account? <a [routerLink]="['/register']" class="f-w-400">Signup</a></p>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,83 @@
+<div class="auth-wrapper align-items-stretch">
+    <div class="header1">
+        <img src="assets/images/GSDLogoFullTransp.png" alt="Snov.io" width="125" class="brand-img">
+        <div class="signup">
+            <span>Already have an account? </span>
+             <a [routerLink]="['/login']" class="btn">Login</a>
+        </div>
+    </div>
+  <div class="flex-grow-1">
+    <div class="h-100 d-md-flex align-items-center auth-side-img">
+      <div class="col-sm-11 auth-content w-auto">
+          <img src="assets/images/GSDLogoFullTransp.png" alt="" class="img-fluid"><br/><br/>
+        <!-- <img src="assets/images/auth/auth-logo.png" alt="" class="img-fluid"> -->
+        <!-- <h1 class="text-white my-4">Welcome you!</h1>
+            <h4 class="text-white font-weight-normal">Signup to your account and made member of the Able Pro Dashboard Template.<br/>Do not forget to play with live customizer</h4>
+         -->
+        <!-- <h1 style="color: #444;">Welcome you!</h1> -->
+        <!-- <h4 class="font-weight-normal" style="color: #444;">Signup to your account and made member of the Able Pro Dashboard Template.<br/>Do not forget to play with live customizer</h4>
+         -->
+         <ul>
+            <li>Get business prospects and email addresses</li>
+            <li>Verify emails individually and in bulk</li>
+            <li>Send emails for free</li>
+            <li>Design drip campaigns visually</li>
+            <li>Identify technologies on websites</li>
+        </ul>
+      </div>
+    </div>
+    <div class="auth-side-form">
+      <div class="auth-content">
+         <div class="form-img">
+           <img src="assets/images/GSDLogoFullTransp.png" *ngIf="toggle" alt="Snov.io" width="125" class="brand-img">
+          </div>
+          <h3 class="login-heading" *ngIf="!toggle">Create your account</h3>
+          <app-alert *ngIf="error" type="danger" dismiss="true">{{errorMessage}}</app-alert>
+          <div *ngIf="toggle">
+            <p>
+              Thank you for signing up...you're well on your way to filling your sales pipeline with high quality, targeted prospect.
+              To access your account and login, click the link in the email that we've just sent you.
+           </p>
+           <button class="btn btn-primary btn-block mb-4" [routerLink]="['/login']" >Login</button>          
+        </div>
+          <form [formGroup]="registerForm" (ngSubmit)="submitUser()">
+        <!-- <img src="assets/images/auth/auth-logo-dark.png" alt="" class="img-fluid mb-4 d-block d-xl-none d-lg-none"> -->
+        <!-- <h3 class="mb-3 f-w-400">Log In to your account</h3> -->
+        <div class="input-group mb-3" *ngIf="!toggle">
+          <input type="text" class="form-control" placeholder="Username" formControlName="username" class="form-control" [(ngModel)]="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" name="username">
+          <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+              <div *ngIf="f.username.errors.required">First Name is required</div>
+          </div>          
+        </div>
+        <div class="input-group mb-3" *ngIf="!toggle">
+          <input type="email" class="form-control" placeholder="Email address" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"  formControlName="email" class="form-control" [(ngModel)]="email" name="email">
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+          </div>
+        </div>
+        <div class="input-group mb-4" *ngIf="!toggle">
+          <input type="password" class="form-control" placeholder="Password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" [(ngModel)]="password" name="password">
+          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Password is required</div>
+              <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+          </div>
+        </div>
+        <!-- <div class="custom-control custom-checkbox text-left mb-4 mt-2">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label for="customCheck1" class="custom-control-label">Send me the <a href="javascript:"> Newsletter</a> weekly.</label>
+        </div> -->
+        <button class="btn btn-primary btn-block mb-4" (click)="submitUser()" *ngIf="!toggle">Sign Me up</button>
+        <p style="font-size: 13px;" *ngIf="!toggle">By clicking "Sign me up" you agree to Simple Data Terms and Conditions and <a href="https://getsimpledata.com/privacy-policy/">Privacy Policy</a> .</p>
+        <div class="text-center" *ngIf="!toggle">
+          <div class="saprator my-4"><span>OR</span></div>
+          <!-- <button class="btn text-white bg-facebook mb-2 mr-2  wid-40 px-0 hei-40 rounded-circle"><i class="fab fa-facebook-f"></i></button>
+          <button class="btn text-white bg-googleplus mb-2 mr-2 wid-40 px-0 hei-40 rounded-circle"><i class="fab fa-google-plus-g"></i></button>
+          <button class="btn text-white bg-twitter mb-2  wid-40 px-0 hei-40 rounded-circle"><i class="fab fa-twitter"></i></button> -->
+          <p class="mt-4">Already have an account? <a [routerLink]="['/login']" class="f-w-400">Signin</a></p>
+        </div>
+      </form>      
+    </div>
+  </div>
+</div>
+   
