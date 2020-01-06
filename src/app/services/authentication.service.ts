@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders} from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { CoreService } from './core.service';
 import { Token } from '@angular/compiler/src/ml_parser/lexer';
@@ -11,7 +11,7 @@ export class AuthenticationService {
     user: any;
     baseUrl: any = '';
     testnonce: any = '';
-    token = `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC96dHdwLnplaG50ZWNoLm5ldCIsImlhdCI6MTU3NTk1NTk5NiwibmJmIjoxNTc1OTU1OTk2LCJleHAiOjE1NzY1NjA3OTYsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.d8wTgKC67aVUw-jIYWy3GjzVkm_3d19s4Ymtd2-2L-0`;
+    token = `7r49mA1ikcErmA1xmuYcMWRKXuyxPOTwviLU0AyEeK6eHLmxcMIqmlB8REuy`;
     constructor(private http: HttpClient, private coreService: CoreService) {
         this.baseUrl = this.coreService.baseURL;
      }
@@ -31,8 +31,26 @@ export class AuthenticationService {
         //     'Authorization':  'Bearer' + this.token,
         //   });
         // return this.http.post('/api/user/login', user, {headers});
-        let params = "username="+user.email+"&password="+user.user_pass;
-        return this.http.get(this.baseUrl + '/api/user/generate_auth_cookie/?'+params).subscribe((response :any) => {
+        // let params = "username="+user.email+"&password="+user.user_pass;
+        // return this.http.get(this.baseUrl + '/api/user/generate_auth_cookie/?'+params).subscribe((response :any) => {
+        //     if (response) {
+        //       return cb(response);
+        //     }
+        // });
+    }
+    
+
+    loginIntoAdmin(user,cb){
+
+        let body = new HttpParams;
+  body = body.set('email', user.email);
+        let form=new FormData()
+        form.append("email",user.email)      
+        console.log("post") 
+        let headers = new HttpHeaders();
+        headers.append('Accept', 'application/json');
+        return this.http.post(this.baseUrl + '/login?api_token='+this.token , form, {headers: headers}).subscribe((response :any) => {
+            console.log(response,"res[pkosdsa")
             if (response) {
               return cb(response);
             }

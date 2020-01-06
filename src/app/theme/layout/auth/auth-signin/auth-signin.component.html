@@ -43,13 +43,13 @@
               <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
           </div> 
         </div>
-        <div class="input-group mb-4">
+        <!-- <div class="input-group mb-4">
           <input type="password" class="form-control" placeholder="Password" formControlName="password" [(ngModel)]="password" name="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
           <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
               <div *ngIf="f.password.errors.required">Password is required</div>
               <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
           </div>
-        </div>
+        </div> -->
         <div class="custom-control custom-checkbox text-left mb-4 mt-2">
           <input type="checkbox" class="custom-control-input" id="customCheck1">
           <label class="custom-control-label" for="customCheck1">Remember me</label>

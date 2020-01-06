@@ -1783,7 +1783,8 @@
 .pcoded-content {
     position: relative;
     display: block;
-    padding: 25px;
+    // padding: 25px;
+    padding: 0px;
     // margin-top: 140px;
 }
 
@@ -3667,3 +3668,71 @@ body.box-layout {
 // ==================================================================
 // ==================================================================
 // ==================================================================
+
+// email campian start
+.tab-card-email .nav.nav-pills
+  {
+    padding: 0px 30px;
+    margin-top: -40px;
+  }
+  .tab-card-email .nav-item 
+  {
+      width: 10%;
+  }
+  .tab-card-email .nav-link.active
+  {
+ 
+    border-bottom: 5px solid #FE7200 !important;
+    color: #fff !important;
+    background-color: transparent !important;
+    border-radius: 0px !important;
+    font-size: 14px;	
+    font-weight: bold;
+    opacity: 10;
+  }
+  .tab-card-email .nav-link
+  {
+    color: #FFFFFF;
+    opacity: 0.75;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .email-campaign-heading
+  {
+    position: absolute;
+    padding: 0px 50px;
+    color: white;
+    top: 40px;
+  }
+  .tab-card-email .tab-content
+  {
+    padding: 30px;
+  }
+  .pcoded-main-container {
+    background: #FFFFFF !important;
+  }
+  .tab-card-email .tab-pane
+  {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 50px 50px 50px 50px;
+  }
+  .tab-card-email .chat-card-col
+  {
+    border-right: 1px solid #DEE2E6;
+  }
+  .tab-card-email .col-lg-3 svg
+  {
+    width: 100% !important;
+  }
+  .email-graph-subheading
+  {
+      font-size: 11px;	
+      font-weight: bold;
+
+  }
+  .chart-text
+  {
+      font-size: 11px;
+  }

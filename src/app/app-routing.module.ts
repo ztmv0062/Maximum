@@ -59,6 +59,10 @@ const routes: Routes = [
         loadChildren: () => import('./demo/dashboard/dashboard.module').then(module => module.DashboardModule)
       },
       {
+        path: 'email-campaign',
+        loadChildren: () => import('./demo/email-campaign/email-campaign.module').then(module => module.EmailCampaignModule)
+      },
+      {
         path: 'layout',
         loadChildren: () => import('./demo/pages/layout/layout.module').then(module => module.LayoutModule)
       },
@@ -85,6 +89,7 @@ const routes: Routes = [
       {
         path: 'helpdesk',
         loadChildren: () => import('./demo/panels/helpdesk/helpdesk.module').then(module => module.HelpdeskModule)
+        
       },
       {
         path: 'school',
@@ -166,7 +171,8 @@ const routes: Routes = [
       {
         path: 'sample-page',
         loadChildren: () => import('./demo/pages/sample-page/sample-page.module').then(module => module.SamplePageModule)
-      }
+      },
+     
     ]
   },
 ];

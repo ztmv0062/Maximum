@@ -63,7 +63,7 @@ export class NavLeftComponent implements OnInit {
     } , 100)    
   }
   navigatetoCampaigns() {
-    this.router.navigate(['dashboard'], { queryParams: { type: 'campaigns' } });
+    this.router.navigate(['/email-campaign'], { queryParams: { type: 'campaigns' } });
     this.service.sendMessage('campaigns');
     setTimeout(() => {
       if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 

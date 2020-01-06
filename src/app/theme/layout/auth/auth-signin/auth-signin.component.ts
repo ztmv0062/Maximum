@@ -36,35 +36,31 @@ constructor(private router: Router,private authenticationService: Authentication
   get f() { return this.loginForm.controls; }
 
   login() {
+    console.log("login")
     this.submitted = true;
     if (this.loginForm.invalid) {
-      return;
+      // return;
+      console.log("hjggh");
   }
+  console.log("login")
     let obj = {
       email: this.email,
-      user_pass: this.password,
     };
-    this.authenticationService.loginUser(obj,(res)=>{
+    this.authenticationService.loginIntoAdmin(obj,(res)=>{
+      console.log("login")
       if (res.status == 'error') {
         this.toggle = true;
       } else {
         this.toggle = false;
-        // this.toastEvent.toast({uid: 'toast5', delay: 1000})
-        // this.toastr.success('You have logged in successfully!');
-        // this.toastr.success('You have logged in successfully!' , 'Error!');
+      console.log(res,"Abcd")
         localStorage.setItem('token', res.cookie);
-        localStorage.setItem('email', res.user.email);
-        localStorage.setItem('id', res.user.id);
+        localStorage.setItem('email', res.email);
+        localStorage.setItem('id', res.id);
         localStorage.setItem('token', res.cookie);
-        // this.toastr.success('You have logged in successfully!','success');
-        // this.router.navigate(['dashboard']);
-        this.router.navigate(['dashboard'], { queryParams: { type: 'home' } });
+        
+        this.router.navigate(['/dashboard'], { queryParams: { type: 'home' } });
       }
     })
-    // if(this.username == 'admin' && this.password == 'admin'){
-  //   }else {
-  //     alert("Invalid credentials");
-  //   }
-  // }
+ 
   }
 }
