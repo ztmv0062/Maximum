@@ -63,6 +63,10 @@ const routes: Routes = [
         loadChildren: () => import('./demo/email-campaign/email-campaign.module').then(module => module.EmailCampaignModule)
       },
       {
+        path: 'settings',
+        loadChildren: () => import('./demo/settings/settings.module').then(module => module.SettingsModule)
+      },      
+      {
         path: 'layout',
         loadChildren: () => import('./demo/pages/layout/layout.module').then(module => module.LayoutModule)
       },

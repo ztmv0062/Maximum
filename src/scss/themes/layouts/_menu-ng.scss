@@ -578,7 +578,7 @@ app-nav-group {
 .pcoded-navbar {
     .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.active > a,
     .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.pcoded-trigger > a {
-        background: $primary-color !important;
+        background: #FE7200 !important;
         color: #fff !important;
         box-shadow: 0 10px 5px -8px rgba(0, 0, 0, 0.4);
     }
@@ -599,7 +599,7 @@ app-nav-group {
     &.menu-light {
         .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.active > a,
         .pcoded-inner-navbar > app-nav-group > app-nav-collapse > li.pcoded-trigger > a {
-            background: $primary-color !important;
+            background: #FE7200 !important;
             color: #fff !important;
             box-shadow: 0 10px 5px -8px rgba(0, 0, 0, 0.4);
         }

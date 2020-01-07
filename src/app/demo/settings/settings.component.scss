@@ -1,0 +1,108 @@
+.test {
+    padding: 50px !important;
+    z-index: 1;
+}
+
+.editForm {
+    padding: 50px !important;
+    padding-right: 200px !important;
+}
+
+label {	height: 15px;	width: auto;	color: #78909C;	font-family: "Open Sans";	font-size: 11px;	line-height: 15px;}
+
+.font-label {
+    font-weight: bold !important;
+    color: red;
+}
+
+
+// .font-label {	height: 20px;	width: 127px;	color: #000000;	font-family: "Open Sans";	font-size: 15px;	font-weight: 600;	line-height: 20px;}
+
+
+.font-label {	height: 18px;	width: auto;	color: #000000;	font-family: "Open Sans";	font-size: 13px;	font-weight: 600;	line-height: 18px;}
+
+// .save-button {	height: 40px;	width: auto; }
+
+
+.rectangle {	height: 40px;	width: 180px;float: right;background-color: #FE7200;	box-shadow: 0 4px 10px 0 rgba(254,114,0,0.2);
+    color: #FFFFFF;	font-family: "Open Sans";	font-size: 12px;	font-weight: bold;	line-height: 17px;	text-align: left;border: none;}
+
+// .semibold-text-copy-6 {	color: #FFFFFF;	font-family: "Open Sans";	font-size: 12px;	font-weight: bold;	line-height: 17px;	text-align: center;}
+
+.card-title  h5 {
+    height: 20px;	width: 127px;	color: red;	font-family: "Open Sans";	font-size: 15px;	font-weight: 600;	line-height: 20px;
+  }
+
+  .form-control:focus {
+    font-weight: bold !important;
+  }
+
+
+  .rectangle:active {
+      background-color: #E56700 !important;
+      color: #FFFFFF;
+  }
+
+  input {
+      font-weight: bolder;
+      color: #333333;	
+      font-family: "Open Sans";
+  }
+
+
+  .main-content {
+    margin-top: -10px !important;
+}
+
+  @media only screen and (max-width: 768px) {
+    .editForm {
+        padding: 0px!important;
+        padding-right: 0px !important;
+        margin-top: 25px !important;
+    }
+    .font-label {
+        float: left !important;
+    }
+    .main-content {
+        margin-left: 25px !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 986px) {
+    .editForm {
+        padding: 0px!important;
+        padding-right: 0px !important;
+        margin-top: 25px !important;
+    }
+    .font-label {
+        float: right !important;
+    }
+    .main-content {
+        margin-left: 30px !important;
+    }
+  }
+
+  .tab-card {
+    .nav-pills {
+      background: #ecf0f5;
+      .nav-item {
+        .nav-link {
+          border-radius: unset;
+        }
+      }
+    }
+  }
+
+  .email-campaign-img
+  {
+    height: 160px;
+    width: 100%;
+  }
+  .pcoded-content
+  {
+      padding: 0px !important;
+  }
+  .tab-card-email .nav.nav-pills
+  {
+    padding: 0px 30px;
+    margin-top: -37px;
+  }

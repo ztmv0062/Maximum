@@ -1,0 +1,165 @@
+<div class="row w-100 m-0 header-img">
+    <img src="assets/images/widget/slider5.jpg" alt="" class="img-fluid email-campaign-img">
+   <h4 class="email-campaign-heading">Settings</h4>
+   </div>
+   <div class="row w-100 m-0">
+
+<div class="row main-content">
+    <div class="col-sm-12 test">
+        <div style="align-items: center;" class="card-title side">
+            <app-card cardTitle="Email Credientials">
+              <form #validationForm="ngForm" class="editForm" novalidate>
+      
+                  <div class="row">               
+                          <div class="col-md-3 col-sm-12">
+                            
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                              <div class="form-group">
+                                  <label>Name</label>
+                                  <input type="text" class="form-control"  placeholder="Name" name="name" #name="ngModel" [(ngModel)]="formInput.name">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                  <label class="form-control-label" for="email">Email</label>&nbsp;<span style="color: red;font-size: 10px;">*</span>
+                                  <input class="form-control input-md" id="email" name="email" type="text" placeholder="Enter Email" [ngClass]="{'is-invalid': !email.valid && (email.dirty || email.touched || isSubmit)}" #email="ngModel" required email [(ngModel)]="formInput.email">
+                                  <label *ngIf="!email.valid && (email.dirty || email.touched || isSubmit)" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">Please enter a valid email address.</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label class="form-label">Password</label>&nbsp;<span style="color: red;font-size: 10px;">*</span>
+                                <input type="password" class="form-control" name="password" placeholder="Enter Password" [ngClass]="{'is-invalid': !password.valid && (password.dirty || password.touched || isSubmit)}" #password="ngModel" minlength="2" required [(ngModel)]="formInput.password">
+                                <label *ngIf="!password.valid && (password.dirty || password.touched || isSubmit)" id="validation-password-error" class="error jquery-validation-error small form-text invalid-feedback">Please enter a valid password.</label>
+                              </div>
+                            </div>                       
+                     
+                  </div>
+                  <div class="row">                
+                          <div class="col-md-3 text-right">
+                              <p class="pt-5 font-label">Imap <span><i class="feather icon-chevron-right"></i></span></p>
+                            </div>
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <label>Username</label>&nbsp;<span style="color: red;font-size: 10px;">*</span>
+                                  <input type="text" class="form-control" placeholder="Username" name="username" #username="ngModel" [(ngModel)]="formInput.username">
+                                </div>
+                            </div>
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <label class="form-label">Password</label>&nbsp;<span style="color: red;font-size: 10px;">*</span>
+                                  <input type="password" class="form-control" name="password" placeholder="Enter Password" [ngClass]="{'is-invalid': !password.valid && (password.dirty || password.touched || isSubmit)}" #password="ngModel" minlength="2" required [(ngModel)]="formInput.password">
+                                  <!-- <label *ngIf="!password.valid && (password.dirty || password.touched || isSubmit)" id="validation-password-error" class="error jquery-validation-error small form-text invalid-feedback">Please enter a valid password.</label> -->
+                                </div>
+                            </div>
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <label>Server</label>&nbsp;<span style="color: red;font-size: 10px;">*</span>
+                                  <input type="text" class="form-control" placeholder="Server" name="server" #server="ngModel" [(ngModel)]="formInput.server">
+                                </div>
+                            </div>
+                          <div class="col-md-3">
+                              <!-- <div class="form-group">
+                                <label class="form-control-label" for="email">Email</label>
+                                <input class="form-control input-md" id="email" name="email" type="text" placeholder="Enter Email" [ngClass]="{'is-invalid': !email.valid && (email.dirty || email.touched || isSubmit)}" #email="ngModel" required email [(ngModel)]="formInput.email">
+                                <label *ngIf="!email.valid && (email.dirty || email.touched || isSubmit)" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">Please enter a valid email address.</label>
+                              </div> -->
+                            </div>
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <label>Port</label>
+                                  <input type="text" class="form-control" placeholder="Port" name="port" #port="ngModel"[(ngModel)]="formInput.port">
+                                </div>
+                            </div>
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <label>SSL</label>
+                                  <input type="text" class="form-control" placeholder="SSL" name="ssl" #ssl="ngModel" [(ngModel)]="formInput.ssl">
+                                </div>
+                            </div>
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <label>Encryption</label>
+                                  <input type="text" class="form-control" placeholder="N/A" name="encryption" #encryption="ngModel" [(ngModel)]="formInput.encryption">
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-9">
+                              <div class="form-group">
+                                  <label>Enabled</label>
+                                  <input type="text" class="form-control" placeholder="N/A" name="enabled" #enabled="ngModel" [(ngModel)]="formInput.enabled">
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                          <div class="col-md-9">
+                              <!-- <div class="form-group">
+                                <label class="form-control-label" for="email">Email</label>
+                                <input class="form-control input-md" id="email" name="email" type="text" placeholder="Enter Email" [ngClass]="{'is-invalid': !email.valid && (email.dirty || email.touched || isSubmit)}" #email="ngModel" required email [(ngModel)]="formInput.email">
+                                <label *ngIf="!email.valid && (email.dirty || email.touched || isSubmit)" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">Please enter a valid email address.</label>
+                              </div> -->
+                            </div>
+                      
+                  </div>
+                  <div class="row">
+                      
+                  </div>
+          <div class="row">
+              <div class="col-md-3 text-right">
+                  <p class="pt-5 font-label">SMTP <span><i class="feather icon-chevron-right"></i></span></p>
+                </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                      <label>Server</label>&nbsp;<span style="color: red;font-size: 10px;">*</span>
+                      <input type="text" class="form-control" placeholder="N/A" name="server" #server="ngModel" [(ngModel)]="formInput.server">
+                    </div>
+                </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                      <label>Port</label>&nbsp;<span style="color: red;font-size: 10px;">*</span>
+                      <input type="text" class="form-control" placeholder="Port" name="port" #port="ngModel" [(ngModel)]="formInput.port">
+                    </div>
+                </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                      <label>Port</label>
+                      <input type="text" class="form-control" value="Encryption" name="port" #port="ngModel" [(ngModel)]="formInput.port">
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                      <label>SSL</label>
+                      <input type="text" class="form-control" value="SSL" name="ssl" #ssl="ngModel" [(ngModel)]="formInput.ssl">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                      <label>Username</label>
+                      <input type="text" class="form-control" value="Username" name="username" #username="ngModel" [(ngModel)]="formInput.username">
+                    </div>
+                </div>
+          </div>   
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group text-right save-button rectangle">
+                      <button type="button" uiSref="work" class="btn btn-primary btn-raised rectangle semibold-text-copy-6"  (click)="save(validationForm)"> <span style="margin-left:1px;"><i class="feather icon-save"></i></span>&nbsp;&nbsp; Save and Update </button>
+                    </div>
+              </div>
+          </div>          
+                    
+                  
+              </form>
+            </app-card>
+          </div>
+        </div>
+        </div>
+
+  

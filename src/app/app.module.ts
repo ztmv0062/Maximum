@@ -34,6 +34,7 @@ import { TestComponent } from './theme/layout/auth/test/test.component';
 import { MessageService } from './services/message.service';
 import { preventDefault } from '@fullcalendar/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SettingsComponent } from './demo/settings/settings.component';
 
 @NgModule({
   declarations: [
