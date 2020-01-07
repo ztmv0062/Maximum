@@ -11,9 +11,9 @@ export class AuthenticationService {
     user: any;
     baseUrl: any = '';
     testnonce: any = '';
-    token = `7r49mA1ikcErmA1xmuYcMWRKXuyxPOTwviLU0AyEeK6eHLmxcMIqmlB8REuy`;
+  
     constructor(private http: HttpClient, private coreService: CoreService) {
-        this.baseUrl = this.coreService.baseURL;
+    
      }
      // tslint:disable-next-line:max-line-length
     //  addHeader() {
@@ -25,36 +25,24 @@ export class AuthenticationService {
     //     };
     //     return options;
     // }
-    loginUser(user,cb) {
-        // let headers: new HttpHeaders ({
-        //     'Content-type': 'application/json',
-        //     'Authorization':  'Bearer' + this.token,
-        //   });
-        // return this.http.post('/api/user/login', user, {headers});
-        // let params = "username="+user.email+"&password="+user.user_pass;
-        // return this.http.get(this.baseUrl + '/api/user/generate_auth_cookie/?'+params).subscribe((response :any) => {
-        //     if (response) {
-        //       return cb(response);
-        //     }
-        // });
-    }
+   
     
 
     loginIntoAdmin(user,cb){
 
-        let body = new HttpParams;
-  body = body.set('email', user.email);
-        let form=new FormData()
-        form.append("email",user.email)      
-        console.log("post") 
-        let headers = new HttpHeaders();
-        headers.append('Accept', 'application/json');
-        return this.http.post(this.baseUrl + '/login?api_token='+this.token , form, {headers: headers}).subscribe((response :any) => {
-            console.log(response,"res[pkosdsa")
-            if (response) {
-              return cb(response);
-            }
-        });
+//         let body = new HttpParams;
+//   body = body.set('email', user.email);
+//         let form=new FormData()
+//         form.append("email",user.email)      
+//         console.log("post") 
+//         let headers = new HttpHeaders();
+//         headers.append('Accept', 'application/json');
+//         return this.http.post(this.baseUrl + '/login?api_token='+this.token , form, {headers: headers}).subscribe((response :any) => {
+//             console.log(response,"res[pkosdsa")
+//             if (response) {
+//               return cb(response);
+//             }
+//         });
     }
 
     storeUserData(token, user) {

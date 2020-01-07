@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { CoreService } from 'src/app/services/core.service';
-
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-user-verfication',
   templateUrl: './user-verfication.component.html',
@@ -11,7 +11,7 @@ import { CoreService } from 'src/app/services/core.service';
 export class UserVerficationComponent implements OnInit {
   baseUrl: any;
   constructor(private route: ActivatedRoute,private http: HttpClient, private coreService: CoreService) {
-    this.baseUrl = this.coreService.baseURL;
+    
  }
 
   ngOnInit() {
@@ -24,7 +24,7 @@ export class UserVerficationComponent implements OnInit {
                 'Content-type': 'application/json',
             })
         }       
-        return this.http.post(this.baseUrl + '/wp/v2/users', obj,headers);
+        return this.http.post(environment.token + '/wp/v2/users', obj,headers);
     }
   }
 }

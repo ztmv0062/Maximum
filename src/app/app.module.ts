@@ -25,7 +25,6 @@ import { NavigationItem } from './theme/layout/admin/navigation/navigation';
 import { NgbButtonsModule, NgbDropdownModule, NgbTabsetModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthenticationService } from './services/authentication.service';
 import { CoreService } from './services/core.service';
-import { HttpClientModule } from '@angular/common/http';
 import { UserVerficationComponent } from './theme/layout/auth/user-verfication/user-verfication.component';
 // import { AuthSignup1Component } from './theme/layout/auth/auth-signup1/auth-signup1.component';
 // import { JwtModule } from '@auth0/angular-jwt';
@@ -34,7 +33,11 @@ import { TestComponent } from './theme/layout/auth/test/test.component';
 import { MessageService } from './services/message.service';
 import { preventDefault } from '@fullcalendar/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './guard/auth.service';
+import { AuthGuard } from './guard/auth.guard';
 
+import { HTTP_INTERCEPTORS, HttpClientModule, HttpClient } from '@angular/common/http';
+import { AuthInterceptor } from './guard/auth.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,7 +84,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     //   }
     // })
   ],
-  providers: [NavigationItem,AuthenticationService,CoreService,MessageService],
+  providers: [
+    NavigationItem,
+    AuthenticationService
+    ,CoreService,
+    MessageService,
+    AuthService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    },
+    AuthGuard,
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

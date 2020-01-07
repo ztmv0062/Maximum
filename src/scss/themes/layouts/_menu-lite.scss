@@ -3711,13 +3711,7 @@ body.box-layout {
   .pcoded-main-container {
     background: #FFFFFF !important;
   }
-  .tab-card-email .tab-pane
-  {
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    padding: 50px 50px 50px 50px;
-  }
+
   .tab-card-email .chat-card-col
   {
     border-right: 1px solid #DEE2E6;
@@ -3736,3 +3730,137 @@ body.box-layout {
   {
       font-size: 11px;
   }
+  .email-table .card-header
+  {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.05);
+    background: #FFFFFF !important;
+    border-bottom: none !important; 
+  }
+  .email-table table thead tr th
+  {
+    color: #78909C;	
+    font-family: "Open Sans";	
+    font-size: 10px;	
+    font-weight: bold;
+    background: transparent !important;
+  }
+
+.card
+{
+    z-index: 1000000 !important;
+
+}
+.email-table .card-body
+{
+    padding: 0px 20px 20px 20px !important;
+}
+.email-table .card-body .dataTables_length
+{
+    display: none;
+}
+.email-table .card-body #DataTables_Table_1_filter
+{
+    display: none;
+}
+.email-table .card-header-right
+{
+    z-index: 1000 !important;
+}
+.email-table table td
+{
+    padding: 10px !important;
+    vertical-align: middle !important;
+}
+.email-table table th
+{
+    padding: 10px !important;
+    vertical-align: middle !important;
+}
+.email-table .dataTables_paginate
+{
+    margin: 20px 0px;
+    border: 1px solid #DEE2E6;
+    padding: 0px !important;
+    border-radius: 4px;
+    margin-left: 0px !important;
+}
+.email-table .paginate_button
+{
+    margin-left: 0px !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover
+{
+    background-color: #FE7200 !important;
+    border: 1px solid #FE7200 !important;  
+    border-radius: 0px !important;
+    margin-left: 0px !important;
+    border-right: 1px solid #DEE2E6 !important;
+}
+.email-table .paginate_button 
+{
+
+    border-right: 1px solid #DEE2E6 !important;
+}
+.email-table .paginate_button.previous.disabled
+{
+    background-color: transparent !important;
+    border: 1px solid transparent !important;  
+}
+.email-table .paginate_button.next.disabled
+{
+    background-color: transparent !important;
+    border: 1px solid transparent !important;  
+}
+.tab-card-email .graph-row
+{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 30px;
+}
+@media screen and (min-width:320px) and (max-width: 768px) 
+{
+    .pcoded-navbar.mob-open .pcoded-main-container ~ .pcoded-header, 
+    .pcoded-navbar.mob-open ~ .pcoded-main-container 
+    {
+        margin-left: 70px !important;
+    }
+    .tab-card-email .nav.nav-pills
+    {
+        padding: 0px !important;
+    }
+    .tab-card-email .nav-item {
+        width: 50%;
+    }
+    .tab-card-email .tab-pane {
+        
+        padding: 0px;
+    }
+    .tab-card-email .chat-card-col {
+        border-right: none; 
+    }
+    .pcoded-content
+    {
+        padding: 0px !important;
+    }
+    app-apex-chart div
+    {
+        width: 100% !important;
+  }
+  .tab-card-email .tab-content {
+ padding: 0px !important;
+}
+}
+  
+
+
+
+
+
+
+
+
+
+
+  

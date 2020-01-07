@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  baseURL: 'http://ztwp.zehntech.net'
+  // baseURL: 'http://ztwp.zehntech.net'
+  baseURL: 'https://www.trk-gsd.info/api/sd-email/',
+  token : `7r49mA1ikcErmA1xmuYcMWRKXuyxPOTwviLU0AyEeK6eHLmxcMIqmlB8REuy`,
 };
 
 /*

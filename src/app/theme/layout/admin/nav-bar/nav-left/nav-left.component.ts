@@ -64,6 +64,7 @@ export class NavLeftComponent implements OnInit {
   }
   navigatetoCampaigns() {
     this.router.navigate(['/email-campaign'], { queryParams: { type: 'campaigns' } });
+    // this.router.navigate(['/tbl-datatable'], { queryParams: { type: 'campaigns' } });
     this.service.sendMessage('campaigns');
     setTimeout(() => {
       if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 
