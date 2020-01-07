@@ -30,6 +30,7 @@ export class NavBarComponent implements OnInit {
   }
 
   navCollapse() {
+
     
     // console.log(this.windowWidth)
     if (this.windowWidth >= 992) {
