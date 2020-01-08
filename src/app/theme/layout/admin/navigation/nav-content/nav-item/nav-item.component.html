@@ -1,6 +1,6 @@
 <ng-container *ngIf="!item.hidden">
-  <li [ngClass]="item.classes"  [routerLinkActive]="['active']">
-    <a class="nav-link" [target]="item.target ? '_blank' : '_self'" [routerLink]="[item.url]" [routerLinkActive]="['active']"  (click)="closeOtherMenu($event)">
+  <li [ngClass]="item.classes">
+    <a class="nav-link test" [target]="item.target ? '_blank' : '_self'" [routerLink]="[item.url]" [routerLinkActive]="['active-header']"  (click)="closeOtherMenu($event)">
       <ng-container *ngTemplateOutlet="itemIcon"></ng-container>
       <span class="pcoded-mtext" *ngIf="item.icon; else directTitle">{{ item.title }}</span>
       <ng-template #directTitle>

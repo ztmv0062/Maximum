@@ -55,7 +55,8 @@ export class AuthSigninComponent implements OnInit {
         localStorage.setItem('token', res.cookie);
         localStorage.setItem('email', res.email);
         localStorage.setItem('id', res.id);
-        localStorage.setItem('token', res.cookie);
+        localStorage.setItem('token', res.api_token);
+        localStorage.setItem('name', res.name);
         this.router.navigate(['/dashboard'], { queryParams: { type: 'home' } });
       }
     }, (error) => {
