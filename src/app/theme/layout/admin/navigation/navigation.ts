@@ -103,47 +103,47 @@ const SettingsNavigationItems = [
           //   // url: '/dashboard/default',
           // },
           {
-            id: ':Linkedin',
-            title: 'Linkedin',
-            type: 'collapse',
-            icon: 'feather icon-home',
-            // url: '/dashboard/default',
+            id: ':Email Credientials',
+            title: 'Email Credientials',
+            type: 'item',
+            icon: 'feather icon-mail',
+            url: '/dashboard/default',
             children: [ ]
             
           },
           {
-            id: ':Email Credientials',
-            title: 'Email Credientials',
-            type: 'collapse',
-            icon: 'feather icon-mail',
-            // url: '/dashboard/default',
+            id: ':Linkedin',
+            title: 'Linkedin',
+            type: 'item',
+            icon: 'feather icon-home',
+            // url: '/dashboard/sale',
             children: [ ]
             
           },
           {
             id: ':Auto Withdrawals',
             title: 'Auto Withdrawals',
-            type: 'collapse',
+            type: 'item',
             icon: 'feather icon-home',
-            // url: '/dashboard/default',
+            // url: '/dashboard/crm',
             children: [ ]
             
           },
           {
             id: ':Billing',
             title: 'Billing',
-            type: 'collapse',
+            type: 'item',
             icon: 'feather icon-file',
-            // url: '/dashboard/default',
+            // url: '/dashboard/analytics',
             children: [ ]
             
           },
           {
             id: ':Signout',
             title: 'Signout',
-            type: 'collapse',
+            type: 'item',
             icon: 'feather icon-log-out',
-            // url: '/dashboard/default',
+            // url: '/dashboard/project',
             children: [ ]
             
           },
@@ -410,45 +410,53 @@ let NavigationItems1 = [
           {
             id: 'Clients',
             title: 'Clients',
-            type: 'collapse',
+            type: 'item',
             icon: 'feather icon-user',
             // url: '/dashboard/default',
+            children: []
+          },
+          {
+            id: 'Filter',
+            title: 'Filter',
+            type: 'item',
+            icon: 'feather icon-filter',
+            // url: '/dashboard/default',
             children: [
-              {
-                id: 'Default',
-                title: 'Default',
-                type: 'collapse',
-                // icon: 'feather icon-home',
-                url: '/dashboard',
-              },
-              {
-                id: 'Sales',
-                title: 'Sales',
-                type: 'collapse',
-                // icon: 'feather icon-home',
-                // url: '/dashboard/sale',
-              },
-              {
-                id: 'CRM',
-                title: 'CRM',
-                type: 'collapse',
-                // icon: 'feather icon-home',
-                // url: '/dashboard/default',
-              },
-              {
-                id: 'Analytics',
-                title: 'Analytics',
-                type: 'collapse',
-                // icon: 'feather icon-home',
-                // url: '/dashboard/default',
-              },
-              {
-                id: 'Project',
-                title: 'Project',
-                type: 'collapse',
-                // icon: 'feather icon-home',
-                // url: '/dashboard/default',
-              }
+              // {
+              //   id: 'Default',
+              //   title: 'Default',
+              //   type: 'collapse',
+              //   // icon: 'feather icon-home',
+              //   url: '/dashboard',
+              // },
+              // {
+              //   id: 'Sales',
+              //   title: 'Sales',
+              //   type: 'collapse',
+              //   // icon: 'feather icon-home',
+              //   // url: '/dashboard/sale',
+              // },
+              // {
+              //   id: 'CRM',
+              //   title: 'CRM',
+              //   type: 'collapse',
+              //   // icon: 'feather icon-home',
+              //   // url: '/dashboard/default',
+              // },
+              // {
+              //   id: 'Analytics',
+              //   title: 'Analytics',
+              //   type: 'collapse',
+              //   // icon: 'feather icon-home',
+              //   // url: '/dashboard/default',
+              // },
+              // {
+              //   id: 'Project',
+              //   title: 'Project',
+              //   type: 'collapse',
+              //   // icon: 'feather icon-home',
+              //   // url: '/dashboard/default',
+              // }
             ]
           }
       ]

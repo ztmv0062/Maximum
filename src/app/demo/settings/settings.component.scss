@@ -54,6 +54,34 @@ label {	height: 15px;	width: auto;	color: #78909C;	font-family: "Open Sans";	fon
     margin-top: -10px !important;
 }
 
+
+
+.settings {	    
+    color: #FFFFFF !important;	
+    font-family: "Open Sans" !important;	
+    font-size: 20px !important;	
+    font-weight: bold !important;	
+    line-height: 27px !important;
+}
+
+.rectangle-4 {	
+    height: 6.72px !important;	
+    width: 6.72px !important;	
+    transform: rotate(45deg) !important;	
+    // background-color: #FFFFFF !important;
+}
+
+
+.sub-label {	
+	margin-left: 20px !important;
+    opacity: 0.75 !important;	
+    color: #FFFFFF !important;	
+    font-family: "Open Sans" !important;	
+    font-size: 11px !important;	
+    line-height: 15px !important;
+}
+
+
   @media only screen and (max-width: 768px) {
     .editForm {
         padding: 0px!important;
@@ -64,7 +92,7 @@ label {	height: 15px;	width: auto;	color: #78909C;	font-family: "Open Sans";	fon
         float: left !important;
     }
     .main-content {
-        margin-left: 25px !important;
+        margin-left: 0px !important;
     }
   }
   @media (min-width: 768px) and (max-width: 986px) {
@@ -106,3 +134,20 @@ label {	height: 15px;	width: auto;	color: #78909C;	font-family: "Open Sans";	fon
     padding: 0px 30px;
     margin-top: -37px;
   }
+
+
+
+  .form-control:focus {
+    border-bottom-color: transparent;
+    background-size: 100% 100%, 100% 100%;
+    transition-duration: 0.3s;
+    box-shadow: none;
+    background-image: linear-gradient(to top, #FE7200 2px, rgba(70, 128, 255, 0) 2px), linear-gradient(to top, #ced4da 1px, rgba(206, 212, 218, 0) 1px);
+}
+//   .form-control:focus {
+//     border-bottom-color: orange !important;
+//     background-size: 100% 100%, 100% 100% !important;
+//     transition-duration: 0.3s !important;
+//     box-shadow: none !important;
+//     background-image: none !important;
+// }

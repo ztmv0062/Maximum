@@ -2,6 +2,7 @@ import {Component, Input, NgZone, OnInit} from '@angular/core';
 import {NavigationItem} from '../../navigation';
 import {NextConfig} from '../../../../../../app-config';
 import {Location} from '@angular/common';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-item',
@@ -13,9 +14,12 @@ export class NavItemComponent implements OnInit {
   public nextConfig: any;
   public themeLayout: string;
 
-  constructor(private location: Location) {
+  constructor(private location: Location , private activated: ActivatedRoute , private route:Router) {
     this.nextConfig = NextConfig.config;
     this.themeLayout = this.nextConfig['layout'];
+    if(document.querySelectorAll('.test').length > 0) {
+      document.querySelectorAll('.test')[0].classList.add('active-header')
+    }
   }
 
   ngOnInit() {
@@ -76,6 +80,8 @@ export class NavItemComponent implements OnInit {
         }
       }, 500);
     }
+    document.querySelectorAll('.test')[0].classList.remove('active-header')
   }
+
 
 }

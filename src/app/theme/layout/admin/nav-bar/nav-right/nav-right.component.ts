@@ -25,6 +25,7 @@ export class NavRightComponent implements OnInit {
     } , 100)
   
     this.activeHeader('icon-user')
+    document.querySelectorAll('.test')[0].classList.add('active-header')
   }
 
   activeHeader(name){
