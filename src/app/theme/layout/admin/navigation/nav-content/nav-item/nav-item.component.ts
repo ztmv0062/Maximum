@@ -80,7 +80,7 @@ export class NavItemComponent implements OnInit {
         }
       }, 500);
     }
-    document.querySelectorAll('.test')[0].classList.remove('active-header')
+    document.querySelectorAll('.test')[0].classList.add('active-header')
   }
 
 

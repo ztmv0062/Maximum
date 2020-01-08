@@ -2,28 +2,44 @@ import { Component, OnInit } from '@angular/core';
 import { CoreService } from 'src/app/services/core.service';
 
 export class FormInput {
+  // email: any;
+  // password: any;
+  // enabled: any;
+  // encryption: any;
+  // ssl: any;
+  // port: any;
+  // server: any;
+  // username: any;
+  // name: any;
+  // imap_username: any;
+  // imap_password: any;
+  // imap_server: any;
+  // imap_port: any;
+  // imap_ssl: any;
+  // imap_encryption: any;
+  // imap_enabled: any;
+  // smtp_server: any;
+  // smtp_port: any;
+  // smtp_encryption: any;
+  // smtp_ssl: any;
+  // smtp_username: any;
+  // signature: any;
+  name:any;
   email: any;
   password: any;
-  enabled: any;
-  encryption: any;
-  ssl: any;
-  port: any;
-  server: any;
-  username: any;
-  name: any;
   imap_username: any;
   imap_password: any;
   imap_server: any;
   imap_port: any;
   imap_ssl: any;
-  imap_encryption: any;
-  imap_enabled: any;
-  smtp_server: any;
-  smtp_port: any;
-  smtp_encryption: any;
-  smtp_ssl: any;
+  imap_encryption: any;      
+  imap_enabled: any;      
+  smtp_server: any;      
+  smtp_port: any;      
+  smtp_encryption: any;      
+  smtp_ssl: any;      
   smtp_username: any;
-  signature: any;
+  signature:any;
 }
 
 @Component({

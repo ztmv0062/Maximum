@@ -68,7 +68,7 @@ export class NavCollapseComponent implements OnInit {
         preParent = preParent.parentElement.parentElement.parentElement;
       } while (preParent.classList.contains('pcoded-submenu'));
     }
-    parent.classList.toggle('pcoded-trigger');
+    // parent.classList.toggle('pcoded-trigger');
   }
 
 }

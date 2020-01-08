@@ -107,46 +107,46 @@ const SettingsNavigationItems = [
             title: 'Email Credientials',
             type: 'item',
             icon: 'feather icon-mail',
-            url: '/dashboard/default',
+             url: '/settings',
             children: [ ]
             
           },
-          {
-            id: ':Linkedin',
-            title: 'Linkedin',
-            type: 'item',
-            icon: 'feather icon-home',
-            // url: '/dashboard/sale',
-            children: [ ]
+          // {
+          //   id: ':Linkedin',
+          //   title: 'Linkedin',
+          //   type: 'item',
+          //   icon: 'feather icon-home',
+          //   // url: '/dashboard/sale',
+          //   children: [ ]
             
-          },
-          {
-            id: ':Auto Withdrawals',
-            title: 'Auto Withdrawals',
-            type: 'item',
-            icon: 'feather icon-home',
-            // url: '/dashboard/crm',
-            children: [ ]
+          // },
+          // {
+          //   id: ':Auto Withdrawals',
+          //   title: 'Auto Withdrawals',
+          //   type: 'item',
+          //   icon: 'feather icon-home',
+          //   // url: '/dashboard/crm',
+          //   children: [ ]
             
-          },
-          {
-            id: ':Billing',
-            title: 'Billing',
-            type: 'item',
-            icon: 'feather icon-file',
-            // url: '/dashboard/analytics',
-            children: [ ]
+          // },
+          // {
+          //   id: ':Billing',
+          //   title: 'Billing',
+          //   type: 'item',
+          //   icon: 'feather icon-file',
+          //   // url: '/dashboard/analytics',
+          //   children: [ ]
             
-          },
-          {
-            id: ':Signout',
-            title: 'Signout',
-            type: 'item',
-            icon: 'feather icon-log-out',
-            // url: '/dashboard/project',
-            children: [ ]
+          // },
+          // {
+          //   id: ':Signout',
+          //   title: 'Signout',
+          //   type: 'item',
+          //   icon: 'feather icon-log-out',
+          //   // url: '/dashboard/project',
+          //   children: [ ]
             
-          },
+          // },
       ]
   },
 ]
