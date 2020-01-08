@@ -1,6 +1,25 @@
 <div class="row w-100 m-0">
  <img src="assets/images/widget/slider5.jpg" alt="" class="img-fluid email-campaign-img">
 <h4 class="email-campaign-heading">Email Campaign</h4>
+<!-- dropdown -->
+<div class="card-header-right table-filter top-filter">
+    <div class="btn-group card-option dropdown" ngbDropdown>
+      <button type="button" class="btn  btn-icon" ngbDropdownToggle>
+        <i class="feather icon-plus"></i>
+       <span>ADD NEW CAMPAIGN</span> 
+      </button>
+      <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+        <li class="dropdown-item full-card" (click)="fullCardToggle(toAnimate, '', true)"><a href="javascript:"><span>Email Only</span></a></li>
+        <li class="dropdown-item minimize-card" (click)="collapsedCardToggle()"><a href="javascript:"><span>Linkedin Only</span>
+          <span style="display:none"><i class="feather icon-plus"></i></span></a></li>
+        <li class="dropdown-item reload-card" (click)="cardRefresh($event)"><a href="javascript:">
+          <!-- <i class="feather icon-refresh-cw"></i> -->
+           Both Email and Linkedin</a></li>
+        
+      </ul>
+    </div>
+  </div>
+<!-- dropdown -->
 </div>
 <div class="row w-100 m-0">
 <div class="col-sm-12 tab-card ">
@@ -16,88 +35,88 @@
                     <p class="text-center text-muted email-graph-subheading">Unique Visitors</p>
                     <div id="-3"></div>
                     <app-apex-chart chartID="monthly-profit-chart-1" [chartConfig]="this.monthlyProfitChartData3"></app-apex-chart>
-                    <div class="m-t-20">
-                      <div class="row ">
-                        <div class="col-md-4 text-center mb-2">
+                  
+                      <div class="row m-0 m-t-20 w-100">
+                        <div class="col-md-4 col-4 text-center mb-2">
                           <h6 class="f-20 f-w-400 m-0">2,849</h6>
                           <p class="text-muted f-14 m-b-0 chart-text">Today</p>
                         </div>
-                        <div class="col-md-4 text-center mb-2">
+                        <div class="col-md-4 col-4 text-center mb-2">
                           <h6 class="f-20 f-w-400 m-0">3,587</h6>
                           <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                         </div>
-                        <div class="col-md-4 text-center mb-2">
+                        <div class="col-md-4 col-4 text-center mb-2">
                           <h6 class="f-20 f-w-400 m-0">3,587</h6>
                           <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                         </div>
                       </div>
-                    </div>
+                    
                     </div>
                   <div class="col-lg-3 col-md-6 chat-card-col">
                     <h2 class="text-center f-w-400 ">8,421</h2>
                     <p class="text-center text-muted email-graph-subheading">Unique Visitors</p>
                     <div id="-3"></div>
                     <app-apex-chart chartID="monthly-profit-chart-2" [chartConfig]="this.monthlyProfitChartData3"></app-apex-chart>
-                    <div class="m-t-20">
-                      <div class="row ">
-                          <div class="col-md-4 text-center mb-2">
+               
+                      <div class="row w-100 m-0 m-t-20">
+                          <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">2,849</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Today</p>
                             </div>
-                            <div class="col-md-4 text-center mb-2">
+                            <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">3,587</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                             </div>
-                            <div class="col-md-4 text-center mb-2">
+                            <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">3,587</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                             </div>
                       </div>
-                    </div>
+                 
                     </div>
                   <div class="col-lg-3 col-md-6 chat-card-col">
                     <h2 class="text-center f-w-400 ">8,421</h2>
                     <p class="text-center text-muted email-graph-subheading">Unique Visitors</p>
                     <div id="-3"></div>
                     <app-apex-chart chartID="monthly-profit-chart-3" [chartConfig]="this.monthlyProfitChartData3"></app-apex-chart>
-                    <div class="m-t-20">
-                      <div class="row ">
-                          <div class="col-md-4 text-center mb-2">
+                    
+                      <div class="row w-100 m-0 m-t-20">
+                          <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">2,849</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Today</p>
                             </div>
-                            <div class="col-md-4 text-center mb-2">
+                            <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">3,587</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                             </div>
-                            <div class="col-md-4 text-center mb-2">
+                            <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">3,587</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                             </div>
                       </div>
-                    </div>
+             
                     </div>
                   <div class="col-lg-3 col-md-6 chat-card-col">
                     <h2 class="text-center f-w-400 ">8,421</h2>
                     <p class="text-center text-muted email-graph-subheading">Unique Visitors</p>
                     <div id="-3"></div>
                     <app-apex-chart chartID="monthly-profit-chart-4" [chartConfig]="this.monthlyProfitChartData3"></app-apex-chart>
-                    <div class="m-t-20">
-                      <div class="row ">
-                          <div class="col-md-4 text-center mb-2">
+                  
+                      <div class="row w-100 m-0 m-t-20">
+                          <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">2,849</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Today</p>
                             </div>
-                            <div class="col-md-4 text-center mb-2">
+                            <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">3,587</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                             </div>
-                            <div class="col-md-4 text-center mb-2">
+                            <div class="col-md-4 col-4 text-center mb-2">
                               <h6 class="f-20 f-w-400 m-0">3,587</h6>
                               <p class="text-muted f-14 m-b-0 chart-text">Yesterday</p>
                             </div>
                       </div>
-                    </div>
+                   
                     </div>
               
           
@@ -106,9 +125,102 @@
           <div class="row w-100 m-0 mt-4">
               <div class="col-xl-12 col-md-12 p-0">
                   <div class="w-100 email-table">
-                  <app-card cardTitle="List Of Campaigns" cardClass="user-list table-card" blockClass="p-0">
+             <app-card cardTitle="List Of Campaigns" cardClass="user-list table-card" blockClass="p-0">
+                <div class="card-header-right table-filter">
+                    <div class="btn-group card-option dropdown" ngbDropdown>
+                      <button type="button" class="btn dropdown-toggle btn-icon" ngbDropdownToggle>
+                        <!-- <i class="feather icon-more-horizontal"></i> -->
+                       <span>Select Status</span> 
+                      </button>
+                      <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                        <li class="dropdown-item full-card" (click)="fullCardToggle(toAnimate, '', true)"><a href="javascript:"><span>All</span></a></li>
+                        <li class="dropdown-item minimize-card" (click)="collapsedCardToggle()"><a href="javascript:"><span>Completed</span>
+                          <span style="display:none"><i class="feather icon-plus"></i></span></a></li>
+                        <li class="dropdown-item reload-card" (click)="cardRefresh($event)"><a href="javascript:">
+                          <!-- <i class="feather icon-refresh-cw"></i> -->
+                           Draft</a></li>
+                        <li class="dropdown-item close-card" (click)="cardRemoveAction()"><a href="javascript:">
+                          <!-- <i class="feather icon-trash"></i>  -->
+                          Paused</a></li>
+                        <li class="dropdown-item close-card" (click)="cardRemoveAction()"><a href="javascript:">
+                          <!-- <i class="feather icon-trash"></i>  -->
+                          Active</a></li>
+                      </ul>
+                    </div>
+                  </div>
               <div class="table-responsive">
-              <table datatable [dtOptions]="dtRouterLinkOptions" class="table "></table>
+              <!-- <table datatable [dtOptions]="dtRouterLinkOptions" class="table "> -->
+              <table datatable  class="table ">
+              <thead>
+                <tr>
+                  <th>
+                   CAMPAIGN NAME
+                  </th>
+                  <th>
+                   PROSPECTS
+                  </th>
+                  <th>
+                   DELIVERED
+                  </th>
+                  <th>
+                  OPENED
+                  </th>
+                  <th>
+                   REPLIED
+                  </th>
+                  <th>
+                   ACTION
+                  </th>
+                </tr>
+              </thead> 
+              <tbody>
+               <tr *ngFor="let item of items">
+               <td>
+                 <div class="campaign-name">{{item.name}}</div> 
+                 <div class="campaign-date">
+                   <span>Created By</span><span class="ml-1 createdby">{{ t }}</span>
+                   <span class="ml-1">{{item.created_at | date: 'dd/MM/yyyy'}}</span>
+                   <span *ngIf="item.status == 0" class="ml-2 draft-status">Draft</span>
+                   <span *ngIf="item.status == 1" class="ml-2 pause-status">Paused</span>
+                   <span *ngIf="item.status == 2" class="ml-2 active-status">Active</span>
+                   <span *ngIf="item.status == 3" class="ml-2 complete-status">Completed</span>
+                  </div>
+                 
+              </td> 
+              <td>
+               0 
+              </td>
+              <td>
+              3
+              </td>
+              <td>
+               4
+              </td>
+              <td>
+               5
+              </td>
+              <td>
+                  <div class="card-header-right table-filterdropdown">
+                  <div class="btn-group card-option dropdown" ngbDropdown>
+                    <button type="button" class="btn dropdown-toggle btn-icon" ngbDropdownToggle>
+                      <!-- <i class="feather icon-more-horizontal"></i> -->
+                      <i class="feather icon-more-vertical"></i>
+                    
+                    </button>
+                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                      <li class="dropdown-item full-card" ><a href="javascript:"><span>Edit</span></a></li>
+                      <li class="dropdown-item minimize-card" ><a href="javascript:"><span>Copy</span>
+                        <span style="display:none"><i class="feather icon-plus"></i></span></a></li>
+                      <li class="dropdown-item reload-card" ><a href="javascript:">
+                         Delete</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </td>
+               </tr> 
+              </tbody>
+              </table>
               </div>
               </app-card>
               </div>
@@ -118,7 +230,7 @@
                 </ngb-tab>
                 <ngb-tab title="TEMPLATES">
               <ng-template ngbTabContent>
-          <h4>hjhghyt</h4>
+        
         </ng-template>
                 </ngb-tab>
                 </ngb-tabset>

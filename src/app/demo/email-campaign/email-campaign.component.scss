@@ -23,4 +23,62 @@
     padding: 0px 30px;
     margin-top: -37px;
   }
-  
+  .table-filter
+  {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+  }
+  .top-filter
+  {
+    position: absolute;
+    right: 47px;
+    top: 70px;
+    z-index: 1;
+  }
+  .campaign-name
+  {
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .campaign-date
+  {
+    color: #78909C;	
+    font-family: "Open Sans";
+    font-size: 11px;
+  }
+  .complete-status
+  {
+    background: seagreen;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 5px 2px 5px;
+  }
+  .pause-status
+  {
+    background: blueviolet;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 5px 2px 5px;
+  }
+  .active-status
+  {
+    background: orangered;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 5px 2px 5px;
+  }
+  .draft-status
+  {
+    background: darkorange;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 5px 2px 5px;
+  }
+  .createdby
+  {
+    color: #333333;
+    font-weight: bold;
+  }

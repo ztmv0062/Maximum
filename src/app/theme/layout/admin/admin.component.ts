@@ -42,8 +42,8 @@ export class AdminComponent implements OnInit {
     }
 
     this.navCollapsed = (this.windowWidth >= 992) ? this.nextConfig.collapseMenu : false;
-    // this.navCollapsedMob = false;
-    this.navCollapsedMob = true;
+    this.navCollapsedMob = false;
+    // this.navCollapsedMob = true;
 
   }
 

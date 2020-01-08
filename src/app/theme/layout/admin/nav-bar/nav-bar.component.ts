@@ -9,6 +9,7 @@ import {NextConfig} from '../../../../app-config';
 export class NavBarComponent implements OnInit {
   public nextConfig: any;
   public menuClass: boolean;
+  
   public collapseStyle: string;
   public windowWidth: number;
 
@@ -18,6 +19,8 @@ export class NavBarComponent implements OnInit {
   constructor() {
     this.nextConfig = NextConfig.config;
     this.menuClass = false;
+   
+
     this.collapseStyle = 'none';
     this.windowWidth = window.innerWidth;
   }
@@ -27,7 +30,9 @@ export class NavBarComponent implements OnInit {
   toggleMobOption() {
     this.menuClass = !this.menuClass;
     this.collapseStyle = (this.menuClass) ? 'block' : 'none';
+   
   }
+
 
   navCollapse() {
 

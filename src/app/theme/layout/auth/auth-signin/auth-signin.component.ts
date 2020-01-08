@@ -51,11 +51,13 @@ export class AuthSigninComponent implements OnInit {
       if (res.status == 'error') {
         this.toggle = true;
       } else {
+        console.log(res)
         this.toggle = false;
         localStorage.setItem('token', res.cookie);
         localStorage.setItem('email', res.email);
         localStorage.setItem('id', res.id);
-        localStorage.setItem('token', res.cookie);
+        localStorage.setItem('token', res.api_token);
+        localStorage.setItem('name', res.name);
         this.router.navigate(['/dashboard'], { queryParams: { type: 'home' } });
       }
     }, (error) => {

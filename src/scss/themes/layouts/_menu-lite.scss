@@ -3702,7 +3702,7 @@ body.box-layout {
     position: absolute;
     padding: 0px 50px;
     color: white;
-    top: 40px;
+    top: 53px;
   }
   .tab-card-email .tab-content
   {
@@ -3747,7 +3747,7 @@ body.box-layout {
 
 .card
 {
-    z-index: 1000000 !important;
+    z-index: 1 !important;
 
 }
 .email-table .card-body
@@ -3819,7 +3819,166 @@ body.box-layout {
     border-radius: 4px;
     padding: 30px;
 }
-@media screen and (min-width:320px) and (max-width: 768px) 
+.table-filter .btn.btn-icon
+{
+    width: 237px !important;
+    height: auto !important;
+    border-radius: 4px !important;
+    font-size: 18px ;
+    display: block !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F7FB !important;
+    padding: 4px 10px !important;
+    text-align: left;
+}
+.table-filter .btn.btn-icon span
+{
+    font-size: 14px;
+    opacity: 0.8;
+    color: #8E8E93;
+}
+
+.table-filter .dropdown-toggle::after {
+    
+    float: right;
+    margin-top: 10px;
+}
+.table-filter ul {
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-top: 1px solid #DEE2E6 !important;
+    border-radius: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+    box-shadow: 0 0 25px 0 rgba(67,67,67,0.1);
+}
+.table-filter .card-option.show .btn.btn-icon
+{
+    box-shadow: 0 0 25px 0 rgba(67,67,67,0.1);
+    background-color: #FFFFFF !important;
+}
+.table-filter ul li
+{
+    background: none !important;
+    box-shadow: none !important;
+    color: #333333 !important;
+    margin: 0px !important;
+   
+}
+.table-filter ul li:hover
+{
+    background: none !important;
+    box-shadow: none !important;
+    color: #FE7200 !important;
+    margin: 0px !important;
+}
+.table-filter ul li:hover a
+{
+    color: #FE7200 !important;
+}
+.table-filter ul li a
+{
+    color: #333333 !important;
+}
+.top-filter .dropdown-toggle::after
+{
+    display: none;
+}
+.top-filter .btn.btn-icon
+{
+    background-color: #FE7200 !important;
+    padding: 6px 10px 4px 10px !important;
+    text-align: right !important;
+    width: 190px !important;
+}
+.top-filter .btn.btn-icon i
+{
+    float: left !important;
+    color: white !important;
+    margin-top: 4px !important;
+}
+.top-filter .btn.btn-icon span
+{
+    text-align: right !important;
+    color: white !important;
+    opacity: 10 !important;
+    font-weight: 600 !important;
+    vertical-align: text-top !important;
+}
+.top-filter .card-option.show .btn.btn-icon 
+{
+     box-shadow: none !important; 
+     background-color: #FE7200  !important; 
+}
+.table-filterdropdown .dropdown-toggle::after
+{
+    display: none !important;
+}
+.table-filterdropdown ul
+{
+    border: none !important;
+    border-radius: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+    box-shadow: 0 0 25px 0 rgba(67,67,67,0.1);
+    right: 27px !important;
+    left: auto !important;
+    top: 0 !important;
+}
+.table-filterdropdown ul li
+{
+    background: none !important;
+    box-shadow: none !important;
+    color: #333333 !important;
+    margin: 0px !important;
+   
+}
+.table-filterdropdown ul li:hover
+{
+    background: none !important;
+    box-shadow: none !important;
+    color: #FE7200 !important;
+    margin: 0px !important;
+}
+.table-filterdropdown ul li:hover a
+{
+    color: #FE7200 !important;
+}
+.table-filterdropdown ul li a
+{
+    color: #333333 !important;
+    font-size: 12px !important;
+}
+.table-filterdropdown i
+{
+    color: gray !important;
+    opacity: 0.5;
+}
+.table-filterdropdown .show i
+{
+    color: #FE7200 !important;
+    opacity: 10 !important;
+}
+.email-table .card-header
+{
+ border-left: 4px solid #2FAFA0;
+ border-radius: 0px;
+} 
+.pcoded-navbar
+{
+    position: fixed !important; 
+}
+.pcoded-header
+{
+position: sticky !important;
+}
+.dataTables_filter
+{
+    display: none !important;
+}
+@media screen and (min-width:320px) and (max-width: 767px) 
 {
     .pcoded-navbar.mob-open .pcoded-main-container ~ .pcoded-header, 
     .pcoded-navbar.mob-open ~ .pcoded-main-container 
@@ -3838,7 +3997,10 @@ body.box-layout {
         padding: 0px;
     }
     .tab-card-email .chat-card-col {
-        border-right: none; 
+        border-right: none;
+        border-bottom: 1px solid #DEE2E6;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     .pcoded-content
     {
@@ -3851,6 +4013,65 @@ body.box-layout {
   .tab-card-email .tab-content {
  padding: 0px !important;
 }
+.table-filter {
+    position: relative !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    right: 0px !important;
+    top: 0px !important;
+}
+.email-campaign-img {
+    height: 200px !important;
+}
+.email-campaign-heading {
+   
+    top: 54px;
+}
+.top-filter {
+    position: absolute !important;
+    right: 0 !important;
+    left: 48px !important;
+    z-index: 1;
+    top: 84px !important;
+}
+.nav
+{
+    z-index: 0 !important;
+}
+.top-filter .btn.btn-icon 
+{
+    padding: 8px 10px 0px 10px !important;
+    width: 184px !important;
+}
+.top-filter .btn.btn-icon i
+{
+    margin-top: 1px !important;
+}
+.top-filter .btn.btn-icon span {
+ 
+    font-size: 12px !important;
+}
+}
+@media screen and (min-width:768px) and (max-width: 930px) 
+{
+    .email-campaign-img
+    {
+        height: 200px !important;
+    }
+    .email-campaign-heading 
+    {
+        top: 80px !important;
+    }
+    .tab-card-email .nav-item {
+        width: 50% !important;
+    }
+    .tab-card-email .chat-card-col {
+     
+        border-bottom: 1px solid #DEE2E6;
+        padding-bottom: 17px;
+        border-right: none !important;
+        margin-bottom: 10px;
+    }
 }
   
 

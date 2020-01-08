@@ -3,14 +3,15 @@
 </div>
 <ng-template #mainHeader>
   <div class="m-header">
-    <a href="javascript:" class="mobile-menu" id="mobile-collapse" (click)="navCollapse($event)"><span></span></a>
+    <a href="javascript:" class="mobile-menu" id="mobile-collapse" (click)="navCollapse($event)" ><span></span></a>
     <a [routerLink]="['/dashboard/analytics']" class="b-brand" style="padding-left: 0px; margin-left: 0px;">
       <img id="main-logo" src="assets/images/main-logo.png" alt="" class="logo" width="110" style="padding-left: 0px; margin-left: -30px;">
       <img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
     </a>
     <a class="mob-toggler" [ngClass]="{'on' : this.menuClass}" href="javascript:" (click)="toggleMobOption()"><i class="feather icon-more-vertical"></i></a>
+  
   </div>
-  <div *ngIf="this.nextConfig['layout'] === 'horizontal'" #navbarWrapper class="navbar-content sidenav-horizontal" id="layout-sidenav">
+  <div *ngIf="this.nextConfig['layout'] === 'horizontal'" #navbarWrapper class="navbar-content sidenav-horizontal" id="layout-sidenav"  >
     <a href="javascript:" class="sidenav-horizontal-prev" [ngClass]="prevDisabled" (click)="scrollMinus()"></a>
       <div  class="sidenav-horizontal-wrapper"><!-- add 14-4 viral -->
         <ul #navbarContent id="side-nav-horizontal" class="nav pcoded-inner-navbar sidenav-inner" (clickOutside)="fireLeave()" (mouseleave)="fireLeave()">

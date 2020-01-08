@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MonthlyProfit3 } from './monthly-profit-3';
+import { CoreService } from 'src/app/services/core.service';
 
 @Component({
   selector: 'app-email-campaign',
@@ -9,13 +10,16 @@ import { MonthlyProfit3 } from './monthly-profit-3';
 export class EmailCampaignComponent implements OnInit {
   public monthlyProfitChartData3: any;
   dtRouterLinkOptions: any = {};
-  
-  constructor() { 
+  public items:[];
+  public t : any;
+  constructor(private coreService: CoreService,) { 
+    
     this.monthlyProfitChartData3 = MonthlyProfit3.crmChartData;
   }
 
   ngOnInit() {
-
+    this.getEmail();
+    
     this.dtRouterLinkOptions = {
       ajax: 'fake-data/datatable-data.json',
       columns: [{
@@ -46,4 +50,20 @@ export class EmailCampaignComponent implements OnInit {
     };
   }
 
+  getEmail() {
+     this.t = localStorage.getItem('name')
+
+    console.log(localStorage.getItem('token') , "hhh")
+    this.coreService.get('showallcampaign?api_token='+ localStorage.getItem('token')).subscribe((data: any) => {
+      console.log(data)
+  this.items = data;
+    }, (error) => {
+      console.log(error)
+     
+    });
+  }
+  
+
 }
+
+
