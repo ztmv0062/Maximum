@@ -79,6 +79,79 @@ const HomeNavigationItems = [
 ]
 
 
+
+
+const SettingsNavigationItems = [
+  {
+    id: 'navigation',
+    title: 'Navigation',
+    type: 'group',
+    icon: 'feather icon-monitor',
+    children: [
+          {
+            id: 'dashboard',
+            title: 'Dashboard',
+            // type: 'collapse',
+            icon: 'feather icon-home',
+            url: '/dashboard/default',
+          },
+          // {
+          //   id: 'Clients',
+          //   title: 'Clients',
+          //   type: 'collapse',
+          //   icon: 'feather icon-user',
+          //   // url: '/dashboard/default',
+          // },
+          {
+            id: ':Linkedin',
+            title: 'Linkedin',
+            type: 'collapse',
+            icon: 'feather icon-home',
+            // url: '/dashboard/default',
+            children: [ ]
+            
+          },
+          {
+            id: ':Email Credientials',
+            title: 'Email Credientials',
+            type: 'collapse',
+            icon: 'feather icon-mail',
+            // url: '/dashboard/default',
+            children: [ ]
+            
+          },
+          {
+            id: ':Auto Withdrawals',
+            title: 'Auto Withdrawals',
+            type: 'collapse',
+            icon: 'feather icon-home',
+            // url: '/dashboard/default',
+            children: [ ]
+            
+          },
+          {
+            id: ':Billing',
+            title: 'Billing',
+            type: 'collapse',
+            icon: 'feather icon-file',
+            // url: '/dashboard/default',
+            children: [ ]
+            
+          },
+          {
+            id: ':Signout',
+            title: 'Signout',
+            type: 'collapse',
+            icon: 'feather icon-log-out',
+            // url: '/dashboard/default',
+            children: [ ]
+            
+          },
+      ]
+  },
+]
+
+
 const CalendarNavigationItems = [
   {
     id: 'navigation',
@@ -1168,6 +1241,9 @@ export class NavigationItem {
       return NavigationItems;
     }else if((message.text == 'inbox')) {
       NavigationItems = InboxNavigationItems
+      return NavigationItems;
+    }else if((message.text == 'settings')) {
+      NavigationItems = SettingsNavigationItems
       return NavigationItems;
     }
     else {

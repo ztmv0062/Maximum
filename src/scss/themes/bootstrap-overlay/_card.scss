@@ -32,6 +32,7 @@
     .card-header {
         border-bottom: $card-header-border;
         position: relative;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.05);
 
         h5 {
             margin-bottom: 0;
