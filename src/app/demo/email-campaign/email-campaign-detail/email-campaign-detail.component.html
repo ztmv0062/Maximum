@@ -1,0 +1,193 @@
+
+<div class="row w-100 m-0">
+        <img src="assets/images/heroheader-image.jpg" alt="" class="img-fluid email-campaign-img">
+       <h4 class="email-campaign-heading">Campaign Statistics</h4>
+       <!-- dropdown -->
+       <div class="card-header-right table-filter top-filter top-filter-emaildetail email-detail-firstcampaign">
+           <div class="btn-group card-option dropdown" ngbDropdown>
+             <button type="button" class="btn  btn-icon" ngbDropdownToggle>
+               <!-- <i class="feather icon-plus"></i> -->
+              <span>MY FIRST CAMPAIGN</span> 
+             </button>
+             <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+               <li class="dropdown-item full-card" (click)="fullCardToggle(toAnimate, '', true)"><a href="javascript:"><span>Email Only</span></a></li>
+               <li class="dropdown-item minimize-card" (click)="collapsedCardToggle()"><a href="javascript:"><span>Linkedin Only</span>
+                 <span style="display:none"><i class="feather icon-plus"></i></span></a></li>
+               <li class="dropdown-item reload-card" (click)="cardRefresh($event)"><a href="javascript:">
+                 <!-- <i class="feather icon-refresh-cw"></i> -->
+                  Both Email and Linkedin</a></li>
+               
+             </ul>
+           </div>
+         </div>
+       <!-- dropdown -->
+       </div>
+       <div class="row w-100 m-0 email-detail-chart">
+       <div class="col-12 email-detail-chart1">
+       <div class="row w-100 m-0">
+        <div class="col-md-12">
+                <div class="row w-100 m-0 mb-2">
+                        <div class="col-md-6 p-0">
+                        <h4 class="email-campaign-detail-heading">
+                           My first campaign - Overview 
+                        </h4>
+                        <p>
+                          Last Month - November  
+                        </p>
+                        </div>  
+                        <div class="col-md-6 p-0 filter-col-emaildetail">
+                        <div class="row w-100 m-0 email-detail-chartfilter">
+                            <div class="col-md-5 p-0">
+
+                            </div>
+                        <div class="col-md-4">
+                          <!-- <div class="card-header-right table-filter top-filter top-filter-emaildetail">
+                           <div class="btn-group card-option dropdown" ngbDropdown>
+                            <button type="button" class="btn  btn-icon" ngbDropdownToggle>
+                          <span>MY FIRST CAMPAIGN</span> 
+                            </button>
+                             </div>
+                         </div> -->
+                        </div> 
+                        <div class="col-md-3 p-0">
+                          <div class="card-header-right table-filter top-filter top-filter-emaildetail">
+                           <div class="btn-group card-option dropdown" ngbDropdown>
+                            <button type="button" class="btn  btn-icon" ngbDropdownToggle>
+                          <span>Filter</span> 
+                            </button>
+                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                                    <li class="dropdown-item full-card" (click)="fullCardToggle(toAnimate, '', true)"><a href="javascript:"><span>Monthly</span></a></li>
+                                    <li class="dropdown-item minimize-card" (click)="collapsedCardToggle()"><a href="javascript:"><span>Yearly</span>
+                                      <span style="display:none"><i class="feather icon-plus"></i></span></a></li>
+                                    <li class="dropdown-item reload-card" (click)="cardRefresh($event)"><a href="javascript:">
+                                      <!-- <i class="feather icon-refresh-cw"></i> -->
+                                       Weekly</a></li>
+                                    
+                                  </ul>
+                             </div>
+                         </div>
+                        </div> 
+                        </div>
+                        </div>  
+                        </div> 
+         <app-card [options]="false">
+        <div class="row w-100 m-0 show-count-emaildetail">
+        <div class="col-md-2">
+        <div class="row w-100 m-0">
+        <div class="col-8">
+        <h4 class="mt-2">
+          32 </h4>
+        <p > Sent </p>
+        </div>
+        <div class="col-4">
+        <img src="assets/images/ico_sent.png" alt="" class="img-fluid mt-3">
+        </div>
+    </div>
+        </div> 
+        <div class="col-md-2">
+                <div class="row w-100 m-0">
+                        <div class="col-8">
+                        <h4 class="mt-2">
+                          32 </h4>
+                        <p > Sent </p>
+                        </div>
+                        <div class="col-4">
+                        <img src="assets/images/ico_opened.png" alt="" class="img-fluid mt-3">
+                        </div>
+                    </div>
+        </div> 
+        <div class="col-md-2">
+                <div class="row w-100 m-0">
+                        <div class="col-8">
+                        <h4 class="mt-2">
+                          32 </h4>
+                        <p > Sent </p>
+                        </div>
+                        <div class="col-4">
+                        <img src="assets/images/ico_clicked.png" alt="" class="img-fluid mt-3">
+                        </div>
+                    </div>
+        </div> 
+        <div class="col-md-2">
+                <div class="row w-100 m-0">
+                        <div class="col-8">
+                        <h4 class="mt-2">
+                          32 </h4>
+                        <p > Sent </p>
+                        </div>
+                        <div class="col-4">
+                        <img src="assets/images/ico_replied.png" alt="" class="img-fluid mt-3">
+                        </div>
+                    </div>
+        </div> 
+        <div class="col-md-2">
+                <div class="row w-100 m-0">
+                        <div class="col-8">
+                        <h4 class="mt-2">
+                          32 </h4>
+                        <p > Sent </p>
+                        </div>
+                        <div class="col-4">
+                        <img src="assets/images/ico_invalid.png" alt="" class="img-fluid mt-3">
+                        </div>
+                    </div>
+        </div> 
+        <div class="col-md-2">
+                <div class="row w-100 m-0">
+                        <div class="col-8">
+                        <h4 class="mt-2">
+                          32 </h4>
+                        <p > Sent </p>
+                        </div>
+                        <div class="col-4">
+                        <img src="assets/images/ico_bounced.png" alt="" class="img-fluid mt-3">
+                        </div>
+                    </div>
+        </div> 
+        </div>    
+         <app-apex-chart chartID="revenue-map-chart" [chartConfig]="this.revenueMapChartData"></app-apex-chart>
+        </app-card>
+        </div>
+       </div>
+       <div class="row w-100 m-0 mt-4">
+            <div class="row w-100 m-0 mb-2">
+                    <div class="col-md-6">
+                    <h4 class="email-campaign-detail-heading">
+                      Statistics
+                    </h4>
+                    <p>
+                      Statistics Details
+                    </p>
+                    </div>  
+                    <div class="col-md-6 p-0">
+                    <div class="row w-100 m-0 email-detail-chartfilter email-detail-chartfilter1 ">
+                        <div class="col-md-9 p-0">
+
+                        </div>
+                    
+                    <div class="col-md-3">
+                      <div class="card-header-right table-filter top-filter top-filter-emaildetail">
+                       <div class="btn-group card-option dropdown" ngbDropdown>
+                        <button type="button" class="btn  btn-icon" ngbDropdownToggle>
+                      <span>Statistic</span> 
+                        </button>
+                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                                <li class="dropdown-item full-card" (click)="fullCardToggle(toAnimate, '', true)"><a href="javascript:"><span>Monthly</span></a></li>
+                                <li class="dropdown-item minimize-card" (click)="collapsedCardToggle()"><a href="javascript:"><span>Yearly</span>
+                                  <span style="display:none"><i class="feather icon-plus"></i></span></a></li>
+                                <li class="dropdown-item reload-card" (click)="cardRefresh($event)"><a href="javascript:">
+                                  <!-- <i class="feather icon-refresh-cw"></i> -->
+                                   Weekly</a></li>
+                                
+                              </ul>
+                         </div>
+                     </div>
+                    </div> 
+                    </div>
+                    </div>  
+                    </div> 
+       </div>
+
+
+    </div>
+    </div>

@@ -2,6 +2,7 @@ import { Component, OnInit ,OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs';
 import { MonthlyProfit3 } from './monthly-profit-3';
 import { CoreService  } from 'src/app/services/core.service';
+import { Router } from '@angular/router';
 
 
 
@@ -21,14 +22,18 @@ export class EmailCampaignComponent implements OnDestroy , OnInit {
   dtTrigger=new Subject();
 
 
-  constructor(private coreService: CoreService,) 
+  constructor(private coreService: CoreService, private router : Router) 
   { 
     
     this.monthlyProfitChartData3 = MonthlyProfit3.crmChartData;
   }
 
  
-
+  getdeta(itemId: any) {
+    
+     this.router.navigate(['/email-campaign',itemId ]);
+    
+  }
   
 
   getEmail() {

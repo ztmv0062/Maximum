@@ -1,0 +1,95 @@
+.email-campaign-img
+  {
+    height: 160px;
+    width: 100%;
+  }
+
+  .top-filter
+  {
+    position: absolute;
+    right: 47px;
+    top: 70px;
+    z-index: 1;
+  }
+.top-filter-emaildetail .dropdown-toggle::after
+{
+    display: block;
+    color: #8E8E93 !important;
+   
+}
+.top-filter-emaildetail button
+{
+    text-align: left !important;
+    background-color: #F6F7FB !important;
+    border-right: 2px !important;
+}
+.top-filter-emaildetail button:focus
+{
+    text-align: left !important;
+    background-color: #F6F7FB !important;
+}
+.top-filter-emaildetail span{
+    color: black !important;
+}
+.top-filter-emaildetail .card-option.show .btn.btn-icon 
+{
+    background-color: #F6F7FB !important;
+}
+.email-detail-chart
+{
+  
+    padding: 0px 48px;
+}
+.email-detail-chart1
+{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    margin-top: -39px !important;
+    border-radius: 2px;
+    padding: 65px;
+}
+
+.email-detail-chart div
+{
+  width: 100% !important;
+}
+.email-detail-chartfilter .top-filter-emaildetail
+{
+  top: 0 !important;
+  position: relative !important;
+  right:0 !important;
+
+}
+.email-detail-chartfilter .top-filter-emaildetail .dropdown-toggle::after
+{
+  
+    color: #8E8E93 !important;
+   
+}
+.email-detail-chartfilter .top-filter-emaildetail button span
+{
+  
+  color: #333333 !important;
+   
+}
+.email-campaign-detail-heading
+{
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+.show-count-emaildetail
+{
+  background: linear-gradient(180deg, rgba(246,247,251,0) 0%, #F6F7FB 100%);
+  padding: 15px;
+}
+.email-detail-firstcampaign
+{
+  position: absolute;
+    right: 49px !important;
+    top: 49px !important;
+    z-index: 1
+}
