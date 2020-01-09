@@ -84,6 +84,7 @@ export class NavLeftComponent implements OnInit {
     this.activeHeader('icon-book')    
   }
   navigatetoActivity() {
+    return;
     this.router.navigate(['dashboard'], { queryParams: { type: 'activity' } });
     this.service.sendMessage('activity');
     setTimeout(() => {
