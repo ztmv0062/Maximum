@@ -30,6 +30,7 @@
             ],
             "styles": [
               "src/styles.scss"
+           
             ],
             "scripts": [
              
@@ -41,6 +42,7 @@
               "node_modules/datatables.net-buttons/js/buttons.flash.js",
               "node_modules/datatables.net-buttons/js/buttons.html5.js",
               "node_modules/datatables.net-buttons/js/buttons.print.js"
+          
             ]
           },
           "configurations": {

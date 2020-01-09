@@ -3983,6 +3983,15 @@ position: sticky !important;
   border-left: 4px solid #2FAFA0 !important;
     border-radius: 0px !important;
 }
+
+#DataTables_Table_1_previous
+{
+    display: none;
+}
+#DataTables_Table_1_next
+{
+    display: none;
+}
 @media screen and (min-width:320px) and (max-width: 767px) 
 {
     .pcoded-navbar.mob-open .pcoded-main-container ~ .pcoded-header, 
