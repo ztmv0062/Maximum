@@ -3992,6 +3992,46 @@ position: sticky !important;
 {
     display: none;
 }
+.paginate_button.next.disabled
+{
+    display: none;
+}
+.paginate_button.previous.disabled
+{
+    display: none;
+}
+.paginate_button.last.disabled:hover
+{
+  background: transparent !important;
+  border: none !important;
+}
+.paginate_button.first.disabled:hover
+{
+  background: transparent !important;
+  border: none !important;
+}
+.email-detail-chart1 .card-header
+{
+   display: none;
+}
+.email-detail-chart1 .card-body
+{
+  padding: 0px !important;
+}
+.show-count-emaildetail .col-md-2
+{
+    border-right: 1px solid #DEE2E6;  
+}
+.show-count-emaildetail .col-md-2:nth-child(6)
+{
+    border-right:none !important
+}
+.show-count-emaildetail p
+{
+    color: #78909C;
+    font-weight: bold;
+}
+
 @media screen and (min-width:320px) and (max-width: 767px) 
 {
     .pcoded-navbar.mob-open .pcoded-main-container ~ .pcoded-header, 
@@ -4069,6 +4109,25 @@ position: sticky !important;
 {
     padding: 20px !important;
 }
+.email-detail-firstcampaign button {
+    
+    margin-top: 40px !important;
+}
+.email-detail-chart {
+    padding: 0px 15px !important;
+}
+.email-detail-chart1 {
+   
+    padding: 20px !important;
+}
+.email-detail-chartfilter .top-filter-emaildetail {
+    
+   left: 0px !important;
+}
+.show-count-emaildetail .col-md-2 {
+    border-right: none !important;
+    border-bottom: 1px solid #DEE2E6 !important;
+}
 }
 @media screen and (min-width:768px) and (max-width: 930px) 
 {
@@ -4089,6 +4148,45 @@ position: sticky !important;
         padding-bottom: 17px;
         border-right: none !important;
         margin-bottom: 10px;
+    }
+    .email-detail-chart1{
+      
+        padding: 40px !important;
+    }
+    .filter-col-emaildetail
+    {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .filter-col-emaildetail .col-md-5
+    {
+       display: none;
+    }
+    .filter-col-emaildetail .btn.btn-icon span
+    {
+      font-size: 12px !important;
+    }
+    .show-count-emaildetail .col-md-2{
+        flex: 0 0 50% !important;
+    max-width: 50% !important;
+    border-right: none !important;
+    }
+    .email-detail-firstcampaign button
+    {
+        margin-top: 20px !important;
+    }
+    .email-detail-chartfilter1
+    {
+        padding-right: 20px !important;
+    }
+    .email-detail-chartfilter1 .col-md-3
+    {
+        flex: 0 0 50% !important;
+       max-width: 50% !important;
+   
+    text-align: right;
+    justify-content: end;
+    display: contents;
     }
 }
 
@@ -4114,8 +4212,64 @@ position: sticky !important;
  
     top: 53px !important;
 }
+
+
+.email-detail-chart1{
+      
+    padding: 40px !important;
+}
+.filter-col-emaildetail
+{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+.filter-col-emaildetail .col-md-5
+{
+   display: none;
+}
+.filter-col-emaildetail .btn.btn-icon span
+{
+  font-size: 12px !important;
+}
+.show-count-emaildetail .col-md-2{
+    flex: 0 0 50% !important;
+max-width: 50% !important;
+border-right: none !important;
+}
+.email-detail-firstcampaign button
+{
+    margin-top: 20px !important;
+}
+.email-detail-chartfilter1
+{
+    padding-right: 20px !important;
+}
+.email-detail-chartfilter1 .col-md-3
+{
+    flex: 0 0 50% !important;
+   max-width: 50% !important;
+
+text-align: right;
+justify-content: end;
+display: contents;
+}
+
 } 
   
+@media screen and (min-width: 1201px) and (max-width: 1300px) 
+{
+    .email-detail-chartfilter1
+    {
+        padding-right: 18px !important;
+    }
+    .email-detail-chartfilter1 .col-md-3 {
+        flex: 0 0 40% !important;
+        max-width: 40% !important;
+        justify-content: end;
+        display: contents;
+    }
+    
+}
 
 
 

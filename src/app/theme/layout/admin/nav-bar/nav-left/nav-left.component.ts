@@ -32,7 +32,8 @@ export class NavLeftComponent implements OnInit {
     // this.service.emitSiteBar('home');   
   }
   navigate() {
-    this.router.navigate(['dashboard'], { queryParams: { type: 'home' } });
+    // this.router.navigate(['dashboard'], { queryParams: { type: 'home' } });
+    this.router.navigate(['dashboard']);
     this.service.sendMessage('home');
     this.activeHeader('icon-users')
     setTimeout(() => {
@@ -43,7 +44,8 @@ export class NavLeftComponent implements OnInit {
     } , 100)
   }
   navigatetoCalender() {
-    this.router.navigate(['dashboard'], { queryParams: { type: 'calendar' } });
+    // this.router.navigate(['dashboard'], { queryParams: { type: 'calendar' } });
+    this.router.navigate(['dashboard']);
     this.service.sendMessage('calendar');
     setTimeout(() => {
       if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 
@@ -54,7 +56,8 @@ export class NavLeftComponent implements OnInit {
     this.activeHeader('icon-calendar')
   }
   navigatetoChart() {
-    this.router.navigate(['dashboard'], { queryParams: { type: 'task' } });
+    // this.router.navigate(['dashboard'], { queryParams: { type: 'task' } });
+    this.router.navigate(['dashboard']);
     this.service.sendMessage('task');
     setTimeout(() => {
       if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 
@@ -63,7 +66,7 @@ export class NavLeftComponent implements OnInit {
     } , 100)    
   }
   navigatetoCampaigns() {
-    this.router.navigate(['/email-campaign'], { queryParams: { type: 'campaigns' } });
+    this.router.navigate(['/email-campaign']);
     // this.router.navigate(['/tbl-datatable'], { queryParams: { type: 'campaigns' } });
     this.service.sendMessage('campaigns');
     setTimeout(() => {
@@ -74,7 +77,8 @@ export class NavLeftComponent implements OnInit {
     this.activeHeader('icon-bar-chart')
   }
   navigatetoProspects() {
-    this.router.navigate(['dashboard'], { queryParams: { type: 'prospects' } });
+    // this.router.navigate(['dashboard'], { queryParams: { type: 'prospects' } });
+    this.router.navigate(['dashboard']);
     this.service.sendMessage('prospects');
     setTimeout(() => {
       if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 
@@ -84,7 +88,8 @@ export class NavLeftComponent implements OnInit {
     this.activeHeader('icon-book')    
   }
   navigatetoActivity() {
-    this.router.navigate(['dashboard'], { queryParams: { type: 'activity' } });
+    // this.router.navigate(['dashboard'], { queryParams: { type: 'activity' } });
+    this.router.navigate(['dashboard']);
     this.service.sendMessage('activity');
     setTimeout(() => {
       if(document.querySelectorAll('.pcoded-hasmenu').length > 0) {
@@ -95,7 +100,8 @@ export class NavLeftComponent implements OnInit {
     
   }
   navigatetoInbox() {
-    this.router.navigate(['dashboard'], { queryParams: { type: 'inbox' } });
+    // this.router.navigate(['dashboard'], { queryParams: { type: 'inbox' } });
+    this.router.navigate(['dashboard']);
     this.service.sendMessage('inbox');
     setTimeout(() => {
       if(document.querySelectorAll('.pcoded-hasmenu').length > 0) {

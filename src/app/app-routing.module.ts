@@ -60,8 +60,8 @@ const routes: Routes = [
       },
       {
         path: 'email-campaign',
-        loadChildren: () => import('./demo/email-campaign/email-campaign.module').then(module => module.EmailCampaignModule)
-      },
+        loadChildren: () => import('./demo/email-campaign/email-campaign.module').then(module => module.EmailCampaignModule),
+     },
       {
         path: 'settings',
         loadChildren: () => import('./demo/settings/settings.module').then(module => module.SettingsModule)
