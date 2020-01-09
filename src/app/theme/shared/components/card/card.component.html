@@ -1,7 +1,7 @@
 <div class="card" [ngClass]="cardClass" [@cardRemove]="cardRemove" #toAnimate animates animatesInitMode="show" [animatesOnInit]="{useVisibility: false, disabled: true}">
   <div class="card-header" *ngIf="!hidHeader" [ngClass]="headerClass">
     <h5 *ngIf="!customHeader" class="card-title">{{ cardTitle  }}</h5><br>
-    <span class="card-subtitle">Nunc et eros ut enim lobortis ultrices</span>
+    <!-- <span class="card-subtitle">Nunc et eros ut enim lobortis ultrices</span> -->
     <p *ngIf="!customHeader && cardCaption" [ngClass]="captionClass">{{cardCaption}}</p>
     <div class="card-header-right" *ngIf="this.options && !customHeader">
       <div class="btn-group card-option dropdown" ngbDropdown>
