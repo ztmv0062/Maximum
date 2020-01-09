@@ -1,4 +1,4 @@
-import { Component, OnInit,OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { CoreService } from 'src/app/services/core.service';
 import { Router } from '@angular/router';
@@ -46,11 +46,12 @@ export class FormInput {
 }
 
 @Component({
-  selector: 'app-settings',
-  templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss']
+  selector: 'app-add-account',
+  templateUrl: './add-account.component.html',
+  styleUrls: ['./add-account.component.scss']
 })
-export class SettingsComponent implements OnInit , OnDestroy {
+export class AddAccountComponent implements OnInit {
+
   dtOptions: DataTables.Settings = {};
   formInput: FormInput;
   form: any;
@@ -67,7 +68,7 @@ export class SettingsComponent implements OnInit , OnDestroy {
   }
 
   ngOnInit() {
-this.getAccounts();
+this.getEmail();
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength:2
@@ -97,11 +98,11 @@ this.getAccounts();
     this.dtTrigger.unsubscribe();
   }
 
-  getAccounts() {
+  getEmail() {
     this.t = localStorage.getItem('name')
-    let token = "EIFcMDLP6y98ybpQXWmz24fnGrEmxOn3c16lVxRR46NUGoVPnJH8hxq4sg6Q"
+
    console.log(localStorage.getItem('token') , "hhh")
-   this.coreService.get('showaccounts?api_token='+ token).subscribe((data: any) => {
+   this.coreService.get('showallcampaign?api_token='+ localStorage.getItem('token')).subscribe((data: any) => {
      console.log(data)
    this.items = data;
    this.dtTrigger.next();
@@ -150,6 +151,24 @@ this.getAccounts();
       }
       document.querySelectorAll('.test')[0].classList.add('active-header')
     } , 100)
+    this.activeHeader('icon-user')
+    
+  }
+
+  
+
+  activeHeader(name){
+    let dropDowns = Array.from(document.querySelectorAll('.test'));
+    dropDowns.forEach(node => {
+      node.classList.remove('active-menu');
+    });
+    for(let i=0 ; i  < document.querySelectorAll('.header-navigation i').length ; i++){
+      if(document.querySelectorAll('.header-navigation i')[i].classList.contains(name)){    
+        document.querySelectorAll('.header-navigation i')[i].classList.add('active-menu')
+      }else {
+        document.querySelectorAll('.header-navigation i')[i].classList.remove('active-menu')
+      }
+    }
   }
 
 }

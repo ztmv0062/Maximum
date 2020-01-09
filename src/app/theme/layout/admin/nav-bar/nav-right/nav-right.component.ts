@@ -16,16 +16,33 @@ export class NavRightComponent implements OnInit {
   ngOnInit() { }
 
   navigatetoCalender() {
+    
+  }
+
+  navigateToSettings(){
     this.router.navigate(['settings'], { queryParams: { type: 'settings' } });
-    this.service.sendMessage('settings');
-    setTimeout(() => {
-      if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 
-        document.querySelectorAll('.pcoded-hasmenu')[0].classList.add('pcoded-trigger')
-      }
-    } , 100)
-  
-    this.activeHeader('icon-user')
+  this.service.sendMessage('settings');
+  setTimeout(() => {
+    if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 
+      document.querySelectorAll('.pcoded-hasmenu')[0].classList.add('pcoded-trigger')
+    }
+  } , 100)
+  this.activeHeader('icon-user')
     document.querySelectorAll('.test')[0].classList.add('active-header')
+  }
+
+
+  navigateToAccount(){
+    this.router.navigate(['addnewaccount'], { queryParams: { type: 'settings' } });
+  this.service.sendMessage('settings');
+  setTimeout(() => {
+    if(document.querySelectorAll('.pcoded-hasmenu').length > 0) { 
+      document.querySelectorAll('.pcoded-hasmenu')[0].classList.add('pcoded-trigger')
+    }
+    document.querySelectorAll('.test')[0].classList.add('active-header')
+  } , 100)
+  this.activeHeader('icon-user')
+   
   }
 
   activeHeader(name){

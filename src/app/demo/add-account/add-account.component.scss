@@ -4,8 +4,9 @@
 }
 
 .editForm {
-    padding: 50px !important;
-    padding-right: 200px !important;
+    // padding: 50px !important;
+    // padding-right: 200px !important;
+    padding-top: 20px !important;
 }
 
 label {	height: 15px;	width: auto;	color: #78909C;	font-family: "Open Sans";	font-size: 11px;	line-height: 15px;}
@@ -107,6 +108,9 @@ label {	height: 15px;	width: auto;	color: #78909C;	font-family: "Open Sans";	fon
     .main-content {
         margin-left: 30px !important;
     }
+    .invalid-feedback {
+        font-size: 8px !important;
+    }
   }
 
   .tab-card {
@@ -170,3 +174,7 @@ label {	height: 15px;	width: auto;	color: #78909C;	font-family: "Open Sans";	fon
   }
 }
 
+.invalid-feedback {
+    margin-top: 5px !important;
+    font-size: 8px !important;
+}

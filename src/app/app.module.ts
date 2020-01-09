@@ -38,6 +38,7 @@ import { AuthGuard } from './guard/auth.guard';
 
 import { HTTP_INTERCEPTORS, HttpClientModule, HttpClient } from '@angular/common/http';
 import { AuthInterceptor } from './guard/auth.interceptor';
+import { AddAccountComponent } from './demo/add-account/add-account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import { AuthInterceptor } from './guard/auth.interceptor';
     ToggleFullScreenDirective,
     UserVerficationComponent,
     TestComponent,
+    // AddAccountComponent,
     // AuthSignup1Component,
   ],
   imports: [

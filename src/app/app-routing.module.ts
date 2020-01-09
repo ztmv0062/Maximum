@@ -67,6 +67,10 @@ const routes: Routes = [
         loadChildren: () => import('./demo/settings/settings.module').then(module => module.SettingsModule)
       },      
       {
+        path: 'addnewaccount',
+        loadChildren: () => import('./demo/add-account/add-account.module').then(module => module.AddAccountModule)
+      },      
+      {
         path: 'layout',
         loadChildren: () => import('./demo/pages/layout/layout.module').then(module => module.LayoutModule)
       },
