@@ -38,7 +38,7 @@
     "angular2-text-mask": "^9.0.0",
     "angular2-tinymce": "^3.3.0",
     "apexcharts": "^3.8.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "css-animator": "^2.3.1",
     "datatables.net": "^1.10.19",
